@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Design tokens — "Tactile Minimalist Tech"
+   Warm editorial paper (light) / obsidian (dark). No gradients as decoration.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino,
+    Georgia, "Songti SC", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+    monospace;
+
+  --step--2: 0.6875rem;
+  --step--1: clamp(0.78rem, 0.76rem + 0.1vw, 0.84rem);
+  --step-0: clamp(0.94rem, 0.92rem + 0.14vw, 1.02rem);
+  --step-1: clamp(1.08rem, 1.02rem + 0.32vw, 1.28rem);
+  --step-2: clamp(1.42rem, 1.24rem + 0.85vw, 2rem);
+  --step-3: clamp(2rem, 1.45rem + 2.4vw, 3.4rem);
+  --step-4: clamp(2.5rem, 1.55rem + 4.2vw, 4.9rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.28;
+  --leading-body: 1.68;
+  --tracking-wide: 0.14em;
+
+  /* --- Space ------------------------------------------------------------ */
+  --space-1: 0.375rem;
+  --space-2: 0.625rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.25rem;
+  --space-6: 3.5rem;
+  --space-7: 5.5rem;
+  --space-8: 8rem;
+
+  /* --- Form ------------------------------------------------------------- */
+  --r-sm: 5px;
+  --r-md: 9px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --hairline: 1px;
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.32, 0.64, 1);
+  --dur-1: 160ms;
+  --dur-2: 320ms;
+  --dur-3: 620ms;
+
+  /* --- Layout ----------------------------------------------------------- */
+  --page: 1120px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --nav-h: 62px;
+}
+
+/* --- Palette: Claude warm paper ---------------------------------------- */
+:root,
+[data-theme="light"] {
+  --bg: #faf9f5;
+  --bg-tint: #f4f2ec;
+  --surface: #ffffff;
+  --surface-sunken: #f4f2ec;
+  --surface-hover: #f7f5ef;
+
+  --ink: #141413;
+  --ink-soft: #45423c;
+  --ink-muted: #7b776f;
+
+  --line: rgba(20, 20, 19, 0.1);
+  --line-strong: rgba(20, 20, 19, 0.2);
+  --line-hairline: rgba(20, 20, 19, 0.055);
+
+  --accent: #c15f3c;
+  --accent-hover: #a44d2c;
+  --accent-soft: rgba(193, 95, 60, 0.09);
+  --accent-ink: #ffffff;
+
+  --glow: rgba(193, 95, 60, 0.5);
+  --grid-line: rgba(20, 20, 19, 0.07);
+  --status: #4f7a52;
+
+  --selection: rgba(193, 95, 60, 0.18);
+  --grain-opacity: 0.05;
+  --grain-blend: multiply;
+  --shadow-color: 20deg 12% 46%;
+
+  --shadow-sm: 0 1px 2px -1px hsl(var(--shadow-color) / 0.14),
+    0 2px 6px -3px hsl(var(--shadow-color) / 0.1);
+  --shadow-md: 0 2px 4px -2px hsl(var(--shadow-color) / 0.12),
+    0 12px 28px -12px hsl(var(--shadow-color) / 0.18);
+}
+
+/* --- Palette: obsidian tech -------------------------------------------- */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #141413;
+  --bg-tint: #171615;
+  --surface: #1c1b1a;
+  --surface-sunken: #232120;
+  --surface-hover: #262423;
+
+  --ink: #f5f3ee;
+  --ink-soft: #d9d6ce;
+  --ink-muted: #8e8a81;
+
+  --line: rgba(245, 243, 238, 0.1);
+  --line-strong: rgba(245, 243, 238, 0.22);
+  --line-hairline: rgba(245, 243, 238, 0.05);
+
+  --accent: #e08a62;
+  --accent-hover: #eda079;
+  --accent-soft: rgba(224, 138, 98, 0.12);
+  --accent-ink: #1a1512;
+
+  --glow: rgba(224, 138, 98, 0.55);
+  --grid-line: rgba(245, 243, 238, 0.06);
+  --status: #7fb087;
+
+  --selection: rgba(224, 138, 98, 0.24);
+  --grain-opacity: 0.045;
+  --grain-blend: screen;
+  --shadow-color: 25deg 8% 4%;
+
+  --shadow-sm: 0 1px 2px -1px hsl(var(--shadow-color) / 0.6),
+    0 2px 8px -4px hsl(var(--shadow-color) / 0.5);
+  --shadow-md: 0 2px 4px -2px hsl(var(--shadow-color) / 0.5),
+    0 16px 36px -16px hsl(var(--shadow-color) / 0.7);
+}
