@@ -159,7 +159,7 @@ main, .site-footer { position: relative; }
 .contact-links { display: flex; flex-direction: column; justify-content: center; gap: 12px; min-width: 0; }
 .copy-email { display: flex; align-items: end; justify-content: space-between; gap: 12px; padding: 0 0 16px; border: 0; border-bottom: 1px solid var(--line); background: none; text-align: left; }
 .copy-email:hover { color: var(--accent); border-color: var(--accent); }
-.email-address { overflow-wrap: anywhere; font: clamp(1.35rem, 3.6vw, 2.9rem)/1.15 var(--serif); letter-spacing: -.02em; }
+.email-address { overflow-wrap: anywhere; font: clamp(1.25rem, 2.8vw, 2.25rem)/1.15 var(--serif); letter-spacing: -.02em; }
 .copy-label { flex-shrink: 0; color: var(--faint); font-size: 9px; }
 .copy-status { min-height: 18px; color: var(--accent); letter-spacing: .14em; }
 .contact .actions { margin-top: 4px; }
@@ -197,6 +197,7 @@ main, .site-footer { position: relative; }
   .experience, .skill-row, .project { grid-template-columns: 1fr; gap: 16px; padding-block: 32px; }
   .time { flex-direction: row; flex-wrap: wrap; }
   .project-end { justify-content: flex-start; }
+  .copy-email { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 
 @media (max-width: 420px) {

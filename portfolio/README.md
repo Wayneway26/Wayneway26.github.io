@@ -10,4 +10,4 @@
 
 GitHub Pages 使用 **Deploy from a branch → main → / (root)**。推送到 `main` 后，GitHub Pages 会发布更新。线上地址为 <https://wayneway26.github.io/portfolio/>。
 
-原站的履历、指标和项目地址按原文保留。页面从 Google Fonts 加载字体，并提供系统字体作为后备。
+经历、项目、教育与成果根据 2027 届简历整理。页面从 Google Fonts 加载字体，并提供系统字体作为后备。
