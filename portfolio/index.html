@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="魏亿恒的个人作品集，记录前端工程与全栈开发的实习经历、项目和技能。">
+  <meta name="theme-color" content="#0e0f11">
+  <title>魏亿恒 — 前端工程 / 全栈开发</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Noto+Serif+SC:wght@400;600;700&amp;family=Space+Grotesk:wght@300;400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <div class="pointer-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="回到顶部"><strong>WYH</strong><span>Portfolio</span></a>
+      <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="navigation">
+        <span></span><span></span>
+      </button>
+      <nav id="navigation" class="navigation" aria-label="页面导航">
+        <a href="#experience">经历</a>
+        <a href="#work">项目</a>
+        <a href="#stack">技能</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <a class="button header-github" href="https://github.com/Wayneway26" target="_blank" rel="noopener noreferrer">
+        <svg class="github-icon" aria-hidden="true"><use href="./icons.svg#github"></use></svg> GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="top" class="hero" aria-labelledby="name">
+      <div class="shell hero-content">
+        <p class="eyebrow hero-label">Portfolio — 2026</p>
+        <h1 id="name">魏亿恒</h1>
+        <p class="eyebrow hero-meta"><span>Wei Yiheng</span><span class="divider"></span><span>前端工程 / 全栈开发</span></p>
+        <p class="hero-tagline">写代码，也雕细节。</p>
+        <p class="hero-description">做过从 0 到 1 的产品，也修过凌晨三点的线上事故。喜欢把复杂的系统拆成能解释清楚的部分。</p>
+        <div class="actions">
+          <a class="button primary" href="#experience">查看经历 <span aria-hidden="true">↓</span></a>
+          <a class="button" href="https://github.com/Wayneway26" target="_blank" rel="noopener noreferrer">
+            <svg class="github-icon" aria-hidden="true"><use href="./icons.svg#github"></use></svg> GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <dl class="shell hero-facts">
+        <div><dt>Status</dt><dd><span class="live-dot" aria-hidden="true"></span>开放 2026 实习机会</dd></div>
+        <div><dt>Based in</dt><dd>中国 · 杭州</dd></div>
+        <div><dt>Focus</dt><dd>前端 / 全栈</dd></div>
+        <div><dt>Scroll</dt><dd>继续向下</dd></div>
+      </dl>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>开放 2026 实习　✳　 TypeScript　✳　 React　✳　 设计系统　✳　 性能优化　✳　 Node.js　✳　 PostgreSQL　✳　 中文排版　✳　 从 0 到 1　✳　 交互细节　✳　</span>
+        <span>开放 2026 实习　✳　 TypeScript　✳　 React　✳　 设计系统　✳　 性能优化　✳　 Node.js　✳　 PostgreSQL　✳　 中文排版　✳　 从 0 到 1　✳　 交互细节　✳　</span>
+      </div>
+    </div>
+
+    <section class="shell about" aria-label="近况">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Now — 2026</p>
+      <div class="reveal">
+        <p class="about-intro">最近在做前端基础设施和设计系统，也在把一些自己用了很久的小工具整理成能给别人用的样子。</p>
+        <ul class="stats">
+          <li><strong>03</strong>段实习经历</li>
+          <li><strong>06</strong>个上线项目</li>
+          <li><strong>08</strong>年写代码</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow section-number" aria-hidden="true">/ 01</span>
+          <h2 id="experience-title">实习经历</h2>
+          <p>按时间倒序，尽量写成可核查的事实。</p>
+        </div>
+        <article class="experience reveal">
+          <div class="time"><span>2025.07 — 至今</span><span class="ongoing"><i class="dot" aria-hidden="true"></i>进行中</span></div>
+          <div>
+            <div class="experience-heading"><h3>前端工程实习生</h3><span>Lumen Studio</span></div>
+            <p>负责设计系统与外部业务页的前端重构，把四套重复实现的组件收敛成一套能复用的基座。</p>
+            <ul class="highlights">
+              <li>重构内部设计系统，组件复用率从 38% 提升到 71%，新页面开发周期缩短约 40%。</li>
+              <li>优化首屏加载路径，LCP 从 3.9s 压到 1.6s，核心 Web 指标进入良好区间。</li>
+              <li>主导 3 个 B 端模块的交互改版，上线后任务完成率提升 12%。</li>
+            </ul>
+            <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>设计系统</li></ul>
+          </div>
+        </article>
+        <article class="experience reveal">
+          <div class="time"><span>2024.12 — 2025.05</span></div>
+          <div>
+            <div class="experience-heading"><h3>全栈开发实习生</h3><span>Nova Labs</span></div>
+            <p>在五人小队里独立承担数据看板从接口到交互的整条链路。</p>
+            <ul class="highlights">
+              <li>独立完成看板模块，支撑日均 2 万+ 次查询，P95 响应稳定在 300ms 内。</li>
+              <li>封装通用图表层，团队后续 6 个页面直接复用，不再各写一遍。</li>
+            </ul>
+            <ul class="tags"><li>Node.js</li><li>PostgreSQL</li><li>ECharts</li></ul>
+          </div>
+        </article>
+        <article class="experience reveal">
+          <div class="time"><span>2024.03 — 2024.08</span></div>
+          <div>
+            <div class="experience-heading"><h3>研究助理</h3><span>Thin End Lab</span></div>
+            <p>校园实验室里的第一段工程训练：把论文里的想法做成能跑起来的原型。</p>
+            <ul class="highlights">
+              <li>复现并改进了可视化分析流程，人工标注耗时从 2 小时压缩到 15 分钟。</li>
+              <li>独立维护实验数据处理脚本，保证每周实验数据可复现。</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>数据可视化</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow section-number" aria-hidden="true">/ 02</span>
+          <h2 id="work-title">代表项目</h2>
+          <p>只放自己真的在用、也还在维护的东西。</p>
+        </div>
+        <a class="project reveal" href="https://github.com/yihengwei/atlas-flow" target="_blank" rel="noopener noreferrer">
+          <span class="eyebrow project-number" aria-hidden="true">01</span>
+          <div><h3>Atlas Flow</h3><p class="project-type">可视化数据流编排器</p><p class="project-stack">React / Canvas / 状态机</p></div>
+          <p class="project-description">在浏览器里用拖拽把数据源、转换和输出连成一条管道，改一下参数就能实时看到结果。</p>
+          <span class="project-end">2025 <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="project reveal" href="https://github.com/yihengwei/grain" target="_blank" rel="noopener noreferrer">
+          <span class="eyebrow project-number" aria-hidden="true">02</span>
+          <div><h3>grain</h3><p class="project-type">命令行笔记工具</p><p class="project-stack">TypeScript / SQLite / CLI</p></div>
+          <p class="project-description">一条命令记下来，全文检索在 20ms 内返回。为「不想打开任何应用」的场景写的。</p>
+          <span class="project-end">2024 <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="project reveal" href="https://github.com/yihengwei/typeface-lab" target="_blank" rel="noopener noreferrer">
+          <span class="eyebrow project-number" aria-hidden="true">03</span>
+          <div><h3>Typeface Lab</h3><p class="project-type">中文排版实验场</p><p class="project-stack">CSS / 变量字体 / 动效</p></div>
+          <p class="project-description">用代码研究中文排版的呼吸感：行高、字距、断行规则，做成可以随手调参数的实验页。</p>
+          <span class="project-end">2024 <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="stack" class="section" aria-labelledby="stack-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow section-number" aria-hidden="true">/ 03</span>
+          <h2 id="stack-title">技能栈</h2>
+          <p>不写百分比，用得顺手的东西自然会出现。</p>
+        </div>
+        <div class="skill-row reveal">
+          <h3><span aria-hidden="true">01</span>语言</h3>
+          <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Go</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-row reveal">
+          <h3><span aria-hidden="true">02</span>前端</h3>
+          <ul><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>CSS 动效</li><li>Canvas</li></ul>
+        </div>
+        <div class="skill-row reveal">
+          <h3><span aria-hidden="true">03</span>工程</h3>
+          <ul><li>Node.js</li><li>PostgreSQL</li><li>Supabase</li><li>Docker</li><li>Git</li><li>自动化测试</li></ul>
+        </div>
+        <div class="skill-row reveal">
+          <h3><span aria-hidden="true">04</span>在意的事</h3>
+          <ul><li>设计系统</li><li>中文排版</li><li>性能调优</li><li>交互细节</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div class="reveal">
+          <p class="eyebrow section-number">/ 04 — Contact</p>
+          <h2 id="contact-title">想聊点什么？<br>我基本都在。</h2>
+          <p class="contact-intro">实习机会、项目合作，或者只是路过想打个招呼，邮件和 GitHub 都能找到我。</p>
+        </div>
+        <div class="contact-links reveal">
+          <button class="copy-email" type="button"><span class="email-address">yiheng.wei@gmail.com</span><span class="copy-label">点击复制</span></button>
+          <p class="copy-status" role="status"></p>
+          <div class="actions">
+            <a class="button primary" href="mailto:yiheng.wei@gmail.com">直接写邮件 <span aria-hidden="true">↗</span></a>
+            <a class="button" href="https://github.com/Wayneway26" target="_blank" rel="noopener noreferrer">
+              <svg class="github-icon" aria-hidden="true"><use href="./icons.svg#github"></use></svg> Wayneway26 <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <span>© 2026 魏亿恒</span>
+      <span>Built by hand</span>
+      <a href="#top">回到顶部 ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
